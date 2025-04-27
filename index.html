@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Recipe Book</h1>
+        <button id="load-recipe">Load Random Recipe</button>
+    </header>
+
+    <div class="recipe-container">
+        <h2 id="recipe-name">Recipe Name</h2>
+        <div id="recipe-content">
+            <button id="show-ingredients">Show Ingredients</button>
+            <div id="ingredients" class="hidden">
+                <ul>
+                    <li>Ingredient 1</li>
+                    <li>Ingredient 2</li>
+                    <li>Ingredient 3</li>
+                </ul>
+            </div>
+            <p id="steps">Recipe steps go here...</p>
+        </div>
+    </div>
+
+    <div id="recipe-tabs">
+        <button class="tab" id="breakfast-tab">Breakfast</button>
+        <button class="tab" id="lunch-tab">Lunch</button>
+        <button class="tab" id="dinner-tab">Dinner</button>
+    </div>
+
+    <div id="recipe-gallery">
+        <img src="./img/r1.jpeg" alt="recipe 1" class="gallery-img">
+        <img src="./img/r2.jpeg" alt="Recipe 2" class="gallery-img">
+    </div>
+
+    <section id="subscribe-form">
+        <h2>Subscribe for Updates</h2>
+        <form id="subscription-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <div id="feedback"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
